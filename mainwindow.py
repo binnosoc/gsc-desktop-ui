@@ -107,10 +107,8 @@ class MainWindow(QMainWindow):
         reply.addButton(yes_button, QMessageBox.ButtonRole.AcceptRole)
         reply.addButton(no_button, QMessageBox.ButtonRole.RejectRole)
 
-
-        # Appliquer un style aux boutons (facultatif)
-        # yes_button.setStyleSheet("background-color: green; color: white;")
-        # no_button.setStyleSheet("background-color: #e55222; color: white;")
+        yes_button.setStyleSheet("background-color: green; color: white;")
+        no_button.setStyleSheet("background-color: #e55222; color: white;")
 
         # Afficher la boîte de dialogue et capturer la réponse
         reply.exec()
